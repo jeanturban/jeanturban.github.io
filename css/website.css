@@ -15,7 +15,7 @@ body {
 }
 
 
-/*Circle Image*/
+/*Circle Image for About Me Section*/
 .circle-image{
   width:240px;
   height:240px;
@@ -27,7 +27,7 @@ body {
 }
 
 
-/*Buttons*/
+/*Arrow button to scroll down*/
 .btn-circle {
 width: 70px;
 height: 70px;

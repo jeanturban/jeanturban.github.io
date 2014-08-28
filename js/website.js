@@ -5,7 +5,7 @@
  */
 
 
-//js to make smooth scrolling from icons
+//Personal JS to make smooth scrolling from
 //Example: <a href="#" class="btn btn-circle scroll-link " data-id="section name" />
 //data-id essentially the same as href but globally accepted (not just "a" tag)
 $(document).ready(function() {
@@ -26,7 +26,8 @@ $(document).ready(function() {
 		$('#main-nav').toggleClass("open");
 	});
 });
-// scroll function
+
+// Built in Scroll function for nav-bar (i didnt touch this)
 function scrollToID(id, speed){
 	var offSet = 50;
 	var targetOffset = $(id).offset().top - offSet;

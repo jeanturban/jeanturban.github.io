@@ -50,16 +50,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="scroll-link" href="#" data-id="about">About</a>
                     </li>
                     <li>
                         <a class="scroll-link" href="#" data-id="portfolio">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#personal">Personal</a>
+                        <a class="scroll-link" href="#" data-id="personal">Personal</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="scroll-link" href="#" data-id="contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -72,8 +72,10 @@
     <header>
         <div class="container">
             <div class="intro-text">
+              <!--First thing you see when page opens! -->
                 <div class="intro-lead-in">Jean-Alexandre Turban</div>
                 <div class="intro-heading">Mechanical Engineering <em>&</em> Computer Science</div>
+                <!-- Nice clickable arrow icon that scrolls down to next section -->
                 <a href="#" class="btn btn-circle scroll-link" data-id="about">
                   <i class="fa fa-angle-double-down">
                   </i>
@@ -82,15 +84,17 @@
         </div>
     </header>
 
-    <!-- Intro -->
+    <!-- About Me section -->
     <div id="about" class="intro">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 text-center">
+              <!-- Define column and place circle image of myself on the left hand side of screen-->
+                <div class="col-md-6 col-md-6 text-center">
                   <div class="circle-image center-block">
                   </div>
                 </div>
-               <div class="col-md-5 text-center">
+                <!-- Define next column and add stuff about me, shows up right next to image" -->
+               <div class="col-md-5 col-xs-5 text-center">
                  <h2>About Me</h2>
                     <p class="lead">I was born in Switzerland, grew up in Mexico, and later moved to Miami, Florida.
                     Now I'm here: an undergrad at Caltech majoring in Mechanical Engineering and minoring in Computer Science.
@@ -104,10 +108,11 @@
     <!-- /Intro -->
 
 
-    <!-- Portfolio Grid Section -->
+    <!-- Projects Section -->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
+              <!-- Title for section -->
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Projects</h2>
                     <h3 class="section-subheading text-muted">Look at past and current projects</h3>
@@ -118,14 +123,18 @@
 
                 <!-- Project 1 -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
+                  <!-- Set up modal (pop up screen) that will have info on project -->
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                      <!-- Set up so when mouse hovers over project it turns all pretty -->
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
+                        <!-- Set image to show for the project -->
                         <img src="img/Current/greatwave.jpg" class="img-responsive" alt="">
                     </a>
+                    <!-- Title for the project -->
                     <div class="portfolio-caption">
                         <h4>3D Art</h4>
                     </div>
@@ -210,13 +219,15 @@
     </section>
 
 
-<!-- footer -->
+<!-- A nice Footer -->
     <footer id="contact">
         <div class="container">
             <div class="row">
+              <!-- Left hand most side -->
                 <div class="col-md-4">
                     <span class="copyright">Copyright &copy; Jean-Alexandre Turban 2014</span>
                 </div>
+                <!-- In the middle, shows icons side by side with proper links -->
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li><a target="_blank" href="https://github.com/jeanturban"><i class="fa fa-github"></i></a>
@@ -227,6 +238,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- On the right side, linkable mailto: -->
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li><a href="mailto:jeanalex23@gmail.com">jeanalex23@gmail.com</a>
@@ -256,9 +268,11 @@
                             <p class="item-intro text-muted">3D Stencil on Acrylic Sheets</p>
                             <img class="img-responsive" src="img/Current/greatwave2.jpg" alt="">
                             <p>A stencil I made this summer (stay tuned for more info and pictures)</p>
+                            <!-- Small time stamp -->
                             <ul class="list-inline">
                                 <li>Date: August 2014</li>
                             </ul>
+                            <!-- Clickable button to exit modal -->
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
