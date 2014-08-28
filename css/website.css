@@ -20,7 +20,7 @@ body {
   width:240px;
   height:240px;
   border-radius:50%;
-  background-image: url(../img/about/headshot.jpg);
+  background-image: url(../img/Current/headshot.jpg);
   display:block;
   background-position-y:50%;
   margin-top: 50px
@@ -300,7 +300,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/mountains.jpg);
+    background-image: url(../img/Current/mountains.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
