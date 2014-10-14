@@ -148,7 +148,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/dots.jpg" class="img-responsive" alt="">
+                        <img src="img/Current/light1.JPG" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Voice Responsive Light Switcher</h4>
@@ -313,8 +313,21 @@
                             <p class="item-intro text-muted">Powered by Arduino</p>
                             <img class="img-responsive" src="img/Current/light2.JPG" alt="">
                             <p>This is a project I designed and built for a class. The idea behind it was that I wanted to be able to turn off my lights while laying down in my lofted bed</p>
+                            <p>As a Mechanical Engineer, I decided to try to apply some of what I had learned in class in designing this. This is the main reason as to why I simply didn't solve
+                              my problem using fancy wiring (a break in the circuit activated by voice doesn't sound too hard). One of the major factors I considered was the force required to
+                              bring down the switch. I attempted to measure this using a makeshift experiment since I did not have a fish-scale of sorts available. My idea behind the experiment
+                              was basically to attach small weights on a string to the switch until it flipped down. I rounded this estimate up to the nearest multiple of 10 and made that my upped bound
+                              for my calculations - basically if I designed my mechanism such that it could work on the upper bound, then I should be good!</p>
 
                             <img class="img-responsive" src="img/Current/light1.JPG" alt="">
+
+                            <p>Knowing the force needed to flip the switch, I worked backwards to figure out the right torque the cam-gear would need. Furthermore, I kept working backwards to figure out
+                            what gear ratio would suit my needs in respect to torque, force, and also angle. Since I was planning on using a servo motor, I had to make sure the gear ratio would allow for
+                            enough rotation of the cam-gear when flipping the switch up or down.</p>
+
+                            <p>In the end, I decided on the gear ratio based on how much space I needed between the servo motor (1st shaft), and the cam-gear (2nd shaft). I made sure that this new gear ratio
+                            would still work, but it was not the ideal ratio I had originally calculated.</p>
+                                  
                             <img class="img-responsive" src="img/Current/light3.JPG" alt="">
 
                             <!-- Small time stamp -->
