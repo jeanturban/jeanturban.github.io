@@ -157,7 +157,23 @@
 
                 <!-- Project 3 -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal3" -->
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal4"  -->
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/dots.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Starshade</h4>
+                    </div>
+                </div>
+
+
+                <!-- Project 4 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal3" -->
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -167,21 +183,6 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Roadrunner</h4>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal4"  -->
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/dots.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Coming Soon!</h4>
                     </div>
                 </div>
 
@@ -362,6 +363,43 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
+                            <h2>JPL's Starshade</h2>
+                            <p class="item-intro text-muted">A space occulter used to hunt for new planets</p>
+                            <p> In the summer of 2014 I interned at NASA's Jet Propulsion Laboratory (JPL) for 10 weeks working on Project Starshade. I am not too sure how much I can disclose regarding my work so instead I have written up a general overview of what the project is. Most of the information below can readily be found online. </p>
+                            <p>A starshade, also dubbed an external occulter, is a precisely shaped screen that flies in far-away formation with a space telescope. The device blocks a star's light to create a high-contrast shadow, so that only light from an orbiting exoplanet enters the telescope for detailed study. The starshade has flower shaped petals which are patterned in a very precise manner to reduce the bending of light waves. Advantages of the starshade include its versatility (the starshade could be use with most current telescopes) and the fact that it encourages simpler future telescope designs (since they would not have to deal with light from the star). Despite the benefits, there are challenges in the form of precision: the starshade must launch and deploy so that everything ends up in the right place - within millimeters. Achieving such tolerances is more impressive when you consider the fact that the starshade could be over 100 feet.</p>
+                            <p>This concept has moved beyond the drawing board at JPL and as part of the process, I helped show part of the starshades feasibility. Specifically, I helped show that the necessary ring truss could be created and deployed to within the desired tolerances. My work primarily included building the truss and designing procedures for ease of repeatibilty.</p>
+                            <p>A released photo of my work this summer can be seen below. The ring truss originally stows in the center cylinder and deploys to the seen full position.</p>
+
+                            <img class="img-responsive" src="img/Current/starshade.jpg" alt="">
+
+                            <!-- Small time stamp -->
+                            <ul class="list-inline">
+                                <li>Date: June-September 2014</li>
+                            </ul>
+                            <!-- Clickable button to exit modal -->
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
                             <h2>Roadrunner</h2>
                             <p class="item-intro text-muted">A path-finder for longboarders</p>
                             <p> A web app I developed along with a friend. Uses Google Maps and a specific algorithm to find the steepest route from point A to point B. </p>
@@ -378,6 +416,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- About Modal -->
     <div class="portfolio-modal modal fade" id="portfoliomodalabout" tabindex="-1" role="dialog" aria-hidden="true">
