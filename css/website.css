@@ -21,6 +21,7 @@ blockquote.style2 {
   margin-left: 50px;
   padding-left: 15px;
   border-left: 3px solid #ccc;
+  text-align: left;
 } 
 
 /*Circle Image for About Me Section*/
