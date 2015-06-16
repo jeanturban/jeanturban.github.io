@@ -65,6 +65,10 @@ p {
     line-height: 1.75;
 }
 
+p.quote {
+  font: 14px/22px normal helvetica, sans-serif;
+}
+
 p.large {
     font-size: 16px;
 }
