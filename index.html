@@ -203,16 +203,16 @@
 
                 <!-- Project 6 -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal6"  -->
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal6"  -->
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/dots.jpg" class="img-responsive" alt="">
+                        <img src="img/Current/map2.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Coming Soon!</h4>
+                        <h4>Occupancy Grid Mapping</h4>
                     </div>
                 </div>
             </div>
@@ -296,58 +296,6 @@
         </div>
     </div>
 
-    <!--Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Voice Responsive Light Switcher</h2>
-                            <p class="item-intro text-muted">Powered by Arduino</p>
-                            <img class="img-responsive" src="img/Current/light2.JPG" alt="">
-                            <p>This is a project I designed and built for a class. The idea behind it was that I wanted to be able to turn off my lights while laying down in my lofted bed</p>
-                            <p>As a Mechanical Engineer, I decided to try to apply some of what I had learned in class in designing this. This is the main reason as to why I simply didn't solve
-                              my problem using fancy wiring (a break in the circuit activated by voice doesn't sound too hard). One of the major factors I considered was the force required to
-                              bring down the switch. I attempted to measure this using a makeshift experiment since I did not have a fish-scale of sorts available. My idea behind the experiment
-                              was basically to attach small weights on a string to the switch until it flipped down. I rounded this estimate up to the nearest multiple of 10 and made that my upped bound
-                              for my calculations - basically if I designed my mechanism such that it could work on the upper bound, then I should be good!</p>
-
-                            <img class="img-responsive" src="img/Current/light1.JPG" alt="">
-
-                            <p>Knowing the force needed to flip the switch, I worked backwards to figure out the right torque the cam-gear would need. Furthermore, I kept working backwards to figure out
-                            what gear ratio would suit my needs in respect to torque, force, and also angle. Since I was planning on using a servo motor which only rotates a total of 90 degrees to each side, I had to make sure the gear ratio would allow for
-                            enough rotation of the cam-gear when flipping the switch up or down.</p>
-
-                            <p>In the end, I decided on the gear ratio based on how much space I needed between the servo motor (1st shaft), and the cam-gear (2nd shaft). This can be seen in the second picture. Basically, the position of the
-                              cam-gear had to be fixed around the center of the light switch, thus given the size of the height/width of the servo motor, there were few gear combinations that made sense. I could have technically
-                              made the box taller as needed to fit bigger gears, but I tried to reduce space where possible. I made sure that this new gear ratio
-                            would still work, but it was not the ideal ratio I had originally calculated.</p>
-
-                            <p>The electronic side of the project was done using an Arduino and a Voice Shield for the Arduino (both not pictured). Wiring and programming the Arduino was
-                              fairly straight forward since there is such expansive documentation onlnine. The space next to the servo motor is where both of these things fit.
-
-                            <img class="img-responsive" src="img/Current/light3.JPG" alt="">
-
-                            <!-- Small time stamp -->
-                            <ul class="list-inline">
-                                <li>Date: August 2014</li>
-                            </ul>
-                            <!-- Clickable button to exit modal -->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--Portfolio Modal 3-->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -435,6 +383,96 @@
         </div>
     </div>
 
+    <!--Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Voice Responsive Light Switcher</h2>
+                            <p class="item-intro text-muted">Powered by Arduino</p>
+                            <img class="img-responsive" src="img/Current/light2.JPG" alt="">
+                            <p>This is a project I designed and built for a class. The idea behind it was that I wanted to be able to turn off my lights while laying down in my lofted bed</p>
+                            <p>As a Mechanical Engineer, I decided to try to apply some of what I had learned in class in designing this. This is the main reason as to why I simply didn't solve
+                              my problem using fancy wiring (a break in the circuit activated by voice doesn't sound too hard). One of the major factors I considered was the force required to
+                              bring down the switch. I attempted to measure this using a makeshift experiment since I did not have a fish-scale of sorts available. My idea behind the experiment
+                              was basically to attach small weights on a string to the switch until it flipped down. I rounded this estimate up to the nearest multiple of 10 and made that my upped bound
+                              for my calculations - basically if I designed my mechanism such that it could work on the upper bound, then I should be good!</p>
+
+                            <img class="img-responsive" src="img/Current/light1.JPG" alt="">
+
+                            <p>Knowing the force needed to flip the switch, I worked backwards to figure out the right torque the cam-gear would need. Furthermore, I kept working backwards to figure out
+                            what gear ratio would suit my needs in respect to torque, force, and also angle. Since I was planning on using a servo motor which only rotates a total of 90 degrees to each side, I had to make sure the gear ratio would allow for
+                            enough rotation of the cam-gear when flipping the switch up or down.</p>
+
+                            <p>In the end, I decided on the gear ratio based on how much space I needed between the servo motor (1st shaft), and the cam-gear (2nd shaft). This can be seen in the second picture. Basically, the position of the
+                              cam-gear had to be fixed around the center of the light switch, thus given the size of the height/width of the servo motor, there were few gear combinations that made sense. I could have technically
+                              made the box taller as needed to fit bigger gears, but I tried to reduce space where possible. I made sure that this new gear ratio
+                            would still work, but it was not the ideal ratio I had originally calculated.</p>
+
+                            <p>The electronic side of the project was done using an Arduino and a Voice Shield for the Arduino (both not pictured). Wiring and programming the Arduino was
+                              fairly straight forward since there is such expansive documentation onlnine. The space next to the servo motor is where both of these things fit.
+
+                            <img class="img-responsive" src="img/Current/light3.JPG" alt="">
+
+                            <!-- Small time stamp -->
+                            <ul class="list-inline">
+                                <li>Date: August 2014</li>
+                            </ul>
+                            <!-- Clickable button to exit modal -->
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Occupancy Grid Mapping</h2>
+                            <p class="item-intro text-muted">__</p>
+                                <p>For this project, a roomba-like robot equipped with a laser range finder was used to collect data of the room. For every data point, the robot recorded an angle, a coordinate, and a distance to a measured object. This information was gathered with ROS and exported to a .txt file with all of the data. The occupancy grid was created using a bayes filter and a standard occupancy grid algorithm:</p>
+
+                                <img class="img-responsive" src="img/Current/algo1.png" alt="">
+                                <img class="img-responsive" src="img/Current/algo2.png" alt="">
+
+                                <p>In the occupancy map, every cell (pixel) is binary: it is either empty or occupied. The probability that the cell is occupied is found using a log-odds representation. My code outputs a represenatation of the map half-way through the data, a representation before log-odd conversions, and a final occupancy grid.</p>
+
+                                <img class="img-responsive" src="img/Current/occupancy_map.png" alt="">
+
+                                <p>The full source code, including sample data on which to run the matlab script, can be found on my github page.</p>
+                            <ul class="list-inline">
+                                <li>Date: March 2015</li>
+                            </ul>
+                            <!-- Clickable button to exit modal -->
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Portfolio Modal 4-->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
