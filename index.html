@@ -11,34 +11,38 @@
 
     <title>Jean-'s Website</title>
 
-    <!-- Bootstrap Core CSS    test-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/website.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Jean-Alexandre Turban</a>
             </div>
@@ -46,20 +50,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="scroll-link" href="#" data-id="about">About</a>
+                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a class="scroll-link" href="#" data-id="portfolio">Projects</a>
-                    </li>
-                    <li>
-                        <a class="scroll-link" href="#" data-id="personal">Personal</a>
-                    </li>
-                    <li>
-                        <a class="scroll-link" href="#" data-id="contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -70,163 +68,41 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-              <!--First thing you see when page opens! -->
-                <div class="intro-lead-in">Jean-Alexandre Turban</div>
-                <div class="intro-heading">Mechanical Engineering <em>&</em> Computer Science</div>
-                <!-- Nice clickable arrow icon that scrolls down to next section -->
-                <a href="#" class="btn btn-circle scroll-link" data-id="about">
-                  <i class="fa fa-angle-double-down">
-                  </i>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Jean-Alexandre Turban</h1>
+                <hr>
+                <p>Mechanical Engineering & Computer Science</p>
+                <a href="#about" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down">
+                    </i>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- About Me section -->
-    <div id="about" class="intro">
-        <div class="container-fluid">
-            <div class="row">
-              <!-- Define column and place circle image of myself on the left hand side of screen-->
-                <div class="col-md-6 text-center">
-                  <div class="circle-image center-block">
-                  </div>
-                </div>
-                <!-- Define next column and add stuff about me, shows up right next to image" -->
-               <div class="col-md-5 text-center">
-                 <h2>About Me</h2>
-                    <p class="lead">I was born in Switzerland, grew up in Mexico, and later moved to Miami, Florida.
-                    Now I'm here: an undergrad at Caltech majoring in Mechanical Engineering and minoring in Computer Science.
-                    I have a heavy interest in robotics and love being able to design and prototype an idea from all fronts.
-                    If you would like to know more about me academically, feel free to connect with me on <a target="_blank" href="http://www.linkedin.com/pub/jean-alexandre-turban/87/8b4/833">LinkedIn</a>
-                     , check out my <a target="_blank" href="https://drive.google.com/file/d/0B6R8txZfShHsTDJmbFJUelhRQ1k/view?usp=sharing">resume</a>, or <a href="#portfoliomodalabout" data-toggle="modal">learn more</a>!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Intro -->
-
-
-    <!-- Projects Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-              <!-- Title for section -->
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                    <h3 class="section-subheading text-muted">Look at past and current projects</h3>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                    <hr class="light">
+                    <p class="text-faded">test</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
-            </div>
-
-            <div class="row">
-
-                <!-- Project 1 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                  <!-- Set up modal (pop up screen) that will have info on project -->
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                      <!-- Set up so when mouse hovers over project it turns all pretty -->
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <!-- Set image to show for the project -->
-                        <img src="img/Current/greatwave.jpg" class="img-responsive" alt="">
-                    </a>
-                    <!-- Title for the project -->
-                    <div class="portfolio-caption">
-                        <h4>3D Art</h4>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal2"-->
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/Current/light1.JPG" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Voice Responsive Light Switcher</h4>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal4"  -->
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/Current/starshade2.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Starshade</h4>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal"> <!-- <a " -->
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/Current/quadcopter2.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Quadcopter</h4>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal6"  -->
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/Current/map2.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Occupancy Grid Mapping</h4>
-                    </div>
-                </div>
-
-                                <!-- Project 4 -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal"> <!-- <a href="#portfolioModal3" -->
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/dots.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Roadrunner</h4>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
 
-<!-- A nice Footer -->
+
+    <!-- A nice Footer -->
     <footer id="contact">
         <div class="container">
             <div class="row">
               <!-- Left hand most side -->
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Jean-Alexandre Turban 2014</span>
+                    <span class="copyright">Copyright &copy; Jean-Alexandre Turban 2016</span>
                 </div>
                 <!-- In the middle, shows icons side by side with proper links -->
                 <div class="col-md-4">
@@ -248,317 +124,20 @@
                 </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>The Great Wave</h2>
-                            <p class="item-intro text-muted">3D Stencil on Acrylic Sheets</p>
-                            <img class="img-responsive" src="img/Current/greatwave.jpg" alt="">
-                            <p>This is a stencil I made during my free time this past summer. There were two aspects involved in creating it: the art and the mechanical.</p>
-                            <p>I designed the stencil based on Hokusai's "The Great Wave of Kanagawa" - a rather well know piece of art. Using open source image editors such as GIMP and
-                              Inkscape I converted the original piece into having 4 colors only and adjusted the image so that it would be suitable for cutting out. All in all, I am pretty
-                              happy with the final look of the stencil in that it is visually pleasing and minimal, all while keeping resemblance to the original piece.</p>
-                            <p>The mechanical aspect involved essentially dealt with making a 3D "canvas" for me to paint on. The idea that led me to paint on acrylic panels
-                              was that I could layer them such that it would give the painting more depth. In order to do this I simply cut 4 sheets of acrylic to the appropriate size
-                              and cut holes in the corners so that rods could go through them. All of this was done with the laser cutter at my school. Following this, I cut 4 steel rods
-                              to the size I wanted (about 4 inches) so that I could line all the panels up and connect them to one another. The last thing I should mention is that I made
-                              circular "spacers" out of acrylic to place between panels such that the panels could not wiggle back and forth on the rod.</p>
-                            <p>I painted one layer per panel and then layed all the panels and spacers from the bottom (back) up. I used a small amount of acrylic glue to bond the spacers
-                              and panels so that the entire frame was firm. The rods were slotted through the panels and the spacers and ensured that everything was lined up</p>
-                              <p>All in all, I am quite happy with the end result. The colors are bright and pop out really well in lit environments so that's a definite plus.
-                              Furthermore, I think my desired effect of depth was achieved and that the stencil turned out great! As a last remark, I think it's worth noting that
-                              I experienced minor inaccurices with all the slop from the laser cutter but I was able to get around it by widening the holes in the spacers. </p>
-                            <img class="img-responsive" src="img/Current/greatwave2.jpg" alt="">
-                            <!-- Small time stamp -->
-                            <ul class="list-inline">
-                                <li>Date: August 2014</li>
-                            </ul>
-                            <!-- Clickable button to exit modal -->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>JPL's Starshade</h2>
-                            <p class="item-intro text-muted">A space occulter used to hunt for new planets</p>
-                            <p> In the summer of 2014 I interned at NASA's Jet Propulsion Laboratory (JPL) for 10 weeks working on Project Starshade. I am not too sure how much I can disclose regarding my work so instead I have written up a general overview of what the project is. Most of the information below can readily be found online. </p>
-                            <p>A starshade, also dubbed an external occulter, is a precisely shaped screen that flies in far-away formation with a space telescope. The device blocks a star's light to create a high-contrast shadow, so that only light from an orbiting exoplanet enters the telescope for detailed study. The starshade has flower shaped petals which are patterned in a very precise manner to reduce the bending of light waves. Advantages of the starshade include its versatility (the starshade could be use with most current telescopes) and the fact that it encourages simpler future telescope designs (since they would not have to deal with light from the star). Despite the benefits, there are challenges in the form of precision: the starshade must launch and deploy so that everything ends up in the right place - within millimeters. Achieving such tolerances is more impressive when you consider the fact that the starshade could be over 100 feet.</p>
-                            <p>This concept has moved beyond the drawing board at JPL and as part of the process, I helped show part of the starshades feasibility. Specifically, I helped show that the necessary ring truss could be created and deployed to within the desired tolerances. My work primarily included building the truss and designing procedures for ease of repeatibilty.</p>
-                            <p>A released photo of my work this summer can be seen below. The ring truss originally stows in the center cylinder and deploys to the seen full position. An animation of the expected finished product, along with more information on the project, can be seen  <a target="_blank" href="http://planetquest.jpl.nasa.gov/video/15">here</a></p>
-
-                            <img class="img-responsive" src="img/Current/starshade.jpg" alt="">
-
-                            <p> A released summary of my work is shown below:</p>
-                            <blockquote class = "style2"><p> August 2014 brought the unveiling of the Starshade Deployment Testbed (SDT) at JPL. This testbed is meant to enable scientists and engineers to meet the challenging petal stowing and deployment requirements for a possible future Starshade mission. </p>
-
-                            <p>The first sub-assembly test was the deployment of a 10m diameter expanding ring truss, to which the Starshade petals attach. Led by three early-career JPL engineers, the truss concept design began in February 2014 and involved a team of six interns and four student workers. By August, the truss concept with 4 of the design's 28 petals was ready for a functional deployment. The designing and building of this prototype provided the opportunity for these university students to be critical members in the flight path development of an exciting potential NASA mission.</p>
-
-                            <p>This testbed, open to investigators from all institutions, will be a platform for advancing the technology readiness level of the many Starshade subsystems. These include the optical shield, petal stowing and unfurling system, and the many critical interfaces to the spacecraft.</p></blockquote>
-
-                            <!-- Small time stamp -->
-                            <ul class="list-inline">
-                                <li>Date: June-September 2014</li>
-                            </ul>
-                            <!-- Clickable button to exit modal -->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-   <!--Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Autonomous Quadcopter</h2>
-                            <p class="item-intro text-muted">Integrating vision algorithms with quadcopters</p>
-
-                            <p>The <a target="_blank" href="http://uavengineering.caltech.edu/">Caltech Unmanned Aerial Vehicle (UAV) Engineering Club</a> was founded September 2014. The first two quarters of the 2014-2015 school year were used to raise money and find interested members of the student body. The mission of the club is to foster interest in UAVs, something that has garnered lots of attention in industry these past couple years. The applications of manned and unmanned vehicles have increased exponentially and having Caltech students involved in pertinent project is the goal of the club. </p>
-
-                            <p>In order to be able to spend more time on projects, Caltech's UAV club participated in Me100 this past year - a student led class that allows students to explore proposed projects. Our goal for the class was to create a quadcopter that could visually recognize a bright colored object and perform an action based on that trigger. In our case, the goal was to make the quadcopter hover and land when a tennis ball rolled underneath it. The built quad is shown below.</p>
-
-                            <img class="img-responsive" src="img/Current/quadcopter.png" alt="">
-
-                            <p>The team made use of a Pixhawk controller to achieve manual and GPS based autonomous flight. After, a Raspberry Pi and Pi camera were integrated into the system to implement our vision algorithms. A full report, including instructions, detailed explanations, and future work can be seen <a target="_blank" href="documents/FinalReportMe100.pdf">here</a>. The team was able to accomplish all of our goals and milestones besides autonomous take off (with the Pi). If you are curious about the full scope of the project I strongly suggest you browse the report!</p>
-
-                            <p>My experiences with the club have given me an increased appreciation for quadcopters and their capacities. I have gained valuable knowledge of quadcopter mechanics and components that will certainly be useful for any future work with multi-rotors. Additionally, this project helped stengthen my knowledge in robotic vision and RC systems (ESCs, PDB's, motor controllers, Rx, Tx, etc.)</p>
-
-                            <p>A video of autonomous flight can be seen below. More videos can be seen on CaltechUAV's youtube <a target="_blank" href="https://www.youtube.com/channel/UCtbG3gPpZzU7LMBd1wyHCCg">page</a>.</p>
-                            <iframe width="420" height="315" src="https://www.youtube.com/embed/SoAmE_ZX4yU" frameborder="0" allowfullscreen></iframe>
-
-                            <!-- Small time stamp -->
-                            <ul class="list-inline">
-                                <li>Date: April - June 2015</li>
-                            </ul>
-                            <!-- Clickable button to exit modal -->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Voice Responsive Light Switcher</h2>
-                            <p class="item-intro text-muted">Powered by Arduino</p>
-                            <img class="img-responsive" src="img/Current/light2.JPG" alt="">
-                            <p>This is a project I designed and built for a class. The idea behind it was that I wanted to be able to turn off my lights while laying down in my lofted bed</p>
-                            <p>As a Mechanical Engineer, I decided to try to apply some of what I had learned in class in designing this. This is the main reason as to why I simply didn't solve
-                              my problem using fancy wiring (a break in the circuit activated by voice doesn't sound too hard). One of the major factors I considered was the force required to
-                              bring down the switch. I attempted to measure this using a makeshift experiment since I did not have a fish-scale of sorts available. My idea behind the experiment
-                              was basically to attach small weights on a string to the switch until it flipped down. I rounded this estimate up to the nearest multiple of 10 and made that my upped bound
-                              for my calculations - basically if I designed my mechanism such that it could work on the upper bound, then I should be good!</p>
-
-                            <img class="img-responsive" src="img/Current/light1.JPG" alt="">
-
-                            <p>Knowing the force needed to flip the switch, I worked backwards to figure out the right torque the cam-gear would need. Furthermore, I kept working backwards to figure out
-                            what gear ratio would suit my needs in respect to torque, force, and also angle. Since I was planning on using a servo motor which only rotates a total of 90 degrees to each side, I had to make sure the gear ratio would allow for
-                            enough rotation of the cam-gear when flipping the switch up or down.</p>
-
-                            <p>In the end, I decided on the gear ratio based on how much space I needed between the servo motor (1st shaft), and the cam-gear (2nd shaft). This can be seen in the second picture. Basically, the position of the
-                              cam-gear had to be fixed around the center of the light switch, thus given the size of the height/width of the servo motor, there were few gear combinations that made sense. I could have technically
-                              made the box taller as needed to fit bigger gears, but I tried to reduce space where possible. I made sure that this new gear ratio
-                            would still work, but it was not the ideal ratio I had originally calculated.</p>
-
-                            <p>The electronic side of the project was done using an Arduino and a Voice Shield for the Arduino (both not pictured). Wiring and programming the Arduino was
-                              fairly straight forward since there is such expansive documentation onlnine. The space next to the servo motor is where both of these things fit.
-
-                            <img class="img-responsive" src="img/Current/light3.JPG" alt="">
-
-                            <!-- Small time stamp -->
-                            <ul class="list-inline">
-                                <li>Date: August 2014</li>
-                            </ul>
-                            <!-- Clickable button to exit modal -->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Occupancy Grid Mapping</h2>
-                            <p class="item-intro text-muted">__</p>
-                                <p>For this project, a roomba-like robot equipped with a laser range finder was used to collect data of the room. For every data point, the robot recorded an angle, a coordinate, and a distance to a measured object. This information was gathered with ROS and exported to a .txt file with all of the data. The occupancy grid was created using a bayes filter and a standard occupancy grid algorithm:</p>
-
-                                <img class="img-responsive" src="img/Current/algo1.png" alt="">
-                                <img class="img-responsive" src="img/Current/algo2.png" alt="">
-
-                                <p>In the occupancy map, every cell (pixel) is binary: it is either empty or occupied. The probability that the cell is occupied is found using a log-odds representation. My code outputs a represenatation of the map half-way through the data, a representation before log-odd conversions, and a final occupancy grid.</p>
-
-                                <img class="img-responsive" src="img/Current/occupancy_map.png" alt="">
-
-                                The actual picture of the environment is seen below
-
-                                <img class="img-responsive" src="img/Current/occupancypic.jpg" alt="">
-
-                                <p>The full source code, including sample data on which to run the matlab script, can be found on my github <a target="_blank" href=" https://github.com/jeanturban/occupancy-grid">page</a>.</p>  
-                            <ul class="list-inline">
-                                <li>Date: March 2015</li>
-                            </ul>
-                            <!-- Clickable button to exit modal -->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Roadrunner</h2>
-                            <p class="item-intro text-muted">A path-finder for longboarders</p>
-                            <p> A web app I developed along with a friend. Uses Google Maps and a specific algorithm to find the steepest route from point A to point B. </p>
-                            <p> More coming soon! </p>
-                            <!-- Small time stamp -->
-                            <ul class="list-inline">
-                                <li>Date: August 2014</li>
-                            </ul>
-                            <!-- Clickable button to exit modal -->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- About Modal -->
-    <div class="portfolio-modal modal fade" id="portfoliomodalabout" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- About Me details go here -->
-
-                            <h2>About Me</h2>
-                            <img class="img-responsive" align="center" src="img/Current/climbing.jpg" alt=""/>
-                            <p class="lead">I was born in Switzerland, grew up in Mexico, and later moved to Miami, Florida.
-                            Now I'm here: an undergrad at Caltech majoring in Mechanical Engineering and minoring in Computer Science.
-                            I have a heavy interest in robotics (which spurred the major/minor combo) and love being able to design and prototype an idea from all fronts.
-                            If you would like to know more about me academically, feel free to connect with me on <a target="_blank" href="http://www.linkedin.com/pub/jean-alexandre-turban/87/8b4/833">LinkedIn</a>
-                             , or check out my <a target="_blank" href="documents/meresume2013.pdf">resume</a>!</p>
-                            <p class="lead">When I am not solving problem sets and studying, I love nothing more than traveling, playing sports, and dabbling in my interests:
-                            I have backpacked the Swiss Alps, competed in triathlons, seen the sun rise over Angkor, and driven through the US.
-                            These days, my free time tends to be filled with one of the following: bouldering, reading, stenciling, being with friends, or learning something interesting (such as the principles of algorithmic trading!)
-                            </p>
-                            <li>Date: August 2014</li>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/website.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
 
