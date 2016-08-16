@@ -46,7 +46,7 @@ p {
   background-color: #ffffff;
 }
 .bg-dark {
-  background-color: #777;
+  background-color: #ffffff;
   color: white;
 }
 .text-faded {
@@ -351,8 +351,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
+  background-color: #777;
+  border-color: #777;
 }
 .btn-primary:active,
 .btn-primary.active,
