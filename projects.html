@@ -25,13 +25,6 @@
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body id="page-top">
@@ -79,9 +72,12 @@
     <section class="no-padding" id="projects">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
+
+                <!-- Project 1 -->
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                    <a href="#portfolioModal1" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <!-- Project Caption -->
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -94,16 +90,17 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-4 col-sm-6">
                     <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Hardware
+                                    Internship
                                 </div>
                                 <div class="project-name">
-                                    Starshade
+                                    JPL
                                 </div>
                             </div>
                         </div>
@@ -115,10 +112,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Hardware
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Quadcopter
                                 </div>
                             </div>
                         </div>
@@ -130,10 +127,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Software
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Occupancy Grid Mapping
                                 </div>
                             </div>
                         </div>
@@ -145,10 +142,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Software
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Kalman Filter
                                 </div>
                             </div>
                         </div>
@@ -160,10 +157,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Hardware
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    BB-8
                                 </div>
                             </div>
                         </div>
@@ -202,6 +199,57 @@
                 </div>
             </div>
         </div>
+
+
+
+<!-- Portfolio Modals -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>The Great Wave</h2>
+                            <p class="item-intro text-muted">3D Stencil on Acrylic Sheets</p>
+                            <img class="img-responsive" src="img/Current/greatwave.jpg" alt="">
+                            <p>This is a stencil I made during my free time this past summer. There were two aspects involved in creating it: the art and the mechanical.</p>
+                            <p>I designed the stencil based on Hokusai's "The Great Wave of Kanagawa" - a rather well know piece of art. Using open source image editors such as GIMP and
+                              Inkscape I converted the original piece into having 4 colors only and adjusted the image so that it would be suitable for cutting out. All in all, I am pretty
+                              happy with the final look of the stencil in that it is visually pleasing and minimal, all while keeping resemblance to the original piece.</p>
+                            <p>The mechanical aspect involved essentially dealt with making a 3D "canvas" for me to paint on. The idea that led me to paint on acrylic panels
+                              was that I could layer them such that it would give the painting more depth. In order to do this I simply cut 4 sheets of acrylic to the appropriate size
+                              and cut holes in the corners so that rods could go through them. All of this was done with the laser cutter at my school. Following this, I cut 4 steel rods
+                              to the size I wanted (about 4 inches) so that I could line all the panels up and connect them to one another. The last thing I should mention is that I made
+                              circular "spacers" out of acrylic to place between panels such that the panels could not wiggle back and forth on the rod.</p>
+                            <p>I painted one layer per panel and then layed all the panels and spacers from the bottom (back) up. I used a small amount of acrylic glue to bond the spacers
+                              and panels so that the entire frame was firm. The rods were slotted through the panels and the spacers and ensured that everything was lined up</p>
+                              <p>All in all, I am quite happy with the end result. The colors are bright and pop out really well in lit environments so that's a definite plus.
+                              Furthermore, I think my desired effect of depth was achieved and that the stencil turned out great! As a last remark, I think it's worth noting that
+                              I experienced minor inaccurices with all the slop from the laser cutter but I was able to get around it by widening the holes in the spacers. </p>
+                            <img class="img-responsive" src="img/Current/greatwave2.jpg" alt="">
+                            <!-- Small time stamp -->
+                            <ul class="list-inline">
+                                <li>Date: August 2014</li>
+                            </ul>
+                            <!-- Clickable button to exit modal -->
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
