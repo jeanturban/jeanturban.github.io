@@ -49,9 +49,13 @@ p {
   background-color: #ffffff;
   color: white;
 }
-.text-faded {
+.text-black {
+  color: #000000;
+}
+.text-white {
   color: #ffffff;
 }
+
 section {
   padding: 100px 0;
 }
