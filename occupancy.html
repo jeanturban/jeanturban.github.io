@@ -78,21 +78,23 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Occupancy Grid Mapping</h2>
                     <p class="item-intro text-muted">Using ROS and Matlab a Computer Vision Occupancy Map</p>
-                    <img class="img-responsive" src="img/portfolio/greatwave2.jpg" alt="">
                     <br>
                     <p class="text-black">For this project, a roomba-like robot equipped with a laser range finder was used to collect data of the room. For every data point, the robot recorded an angle, a coordinate, and a distance to a measured object. This information was gathered with ROS and exported to a .txt file with all of the data. The occupancy grid was created using a bayes filter and a standard occupancy grid algorithm:</p>
 
-                    <img class="img-responsive" src="img/portfolio/algo1.png" alt="" align="middle">
-                    <img class="img-responsive" src="img/portfolio/algo2.png" alt="" align="middle">
+                    <center><img class="img-responsive" src="img/portfolio/algo1.png" alt="" align="middle">
+                    <img class="img-responsive" src="img/portfolio/algo2.png" alt="" align="middle"></center>
 
+                    <br>
                     <p class="text-black">In the occupancy map, every cell (pixel) is binary: it is either empty or occupied. The probability that the cell is occupied is found using a log-odds representation. My code outputs a represenatation of the map half-way through the data, a representation before log-odd conversions, and a final occupancy grid.</p>
 
                     <img class="img-responsive" src="img/portfolio/occupancy_map.png" alt="" align="middle">
 
+                    <br>
                     The actual picture of the environment is seen below
 
                     <img class="img-responsive" src="img/portfolio/occupancypic.jpg" alt="" align="middle">
 
+                    <br>
                     <p class="text-black">The full source code, including sample data on which to run the matlab script, can be found on my github <a target="_blank" href=" https://github.com/jeanturban/occupancy-grid">page</a>.</p>  
 
                     <!-- Small time stamp -->
