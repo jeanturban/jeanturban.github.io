@@ -67,7 +67,7 @@
     <header style="background-image: url('img/outpost3.jpg')">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">The Great Wave 3D</h1>
+                <h1 id="homeHeading">Computer Vision: Occupancy Grid Mapping</h1>
             </div>
         </div>
     </header>
@@ -76,27 +76,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">The Great Wave</h2>
-                    <p class="item-intro text-muted">3D Stencil on Acrylic Sheets</p>
+                    <h2 class="section-heading">Occupancy Grid Mapping</h2>
+                    <p class="item-intro text-muted">Using ROS and Matlab a Computer Vision Occupancy Map</p>
                     <img class="img-responsive" src="img/portfolio/greatwave2.jpg" alt="">
                     <br>
-                    <p class="text-black">This is a stencil I made in the summer of 2014. I designed the stencil based on Hokusai's "The Great Wave of Kanagawa" - a rather well known piece of art. 
-                    <p class="text-black"> Using open source image editors such as GIMP and Inkscape, I converted the original piece into 4 colors only and adjusted the image so that it would be suitable for cutting out.</p>
-                    <p class="text-black">The mechanical aspect involved essentially dealt with making a 3D "canvas" for me to paint on. The idea that led me to paint on acrylic panels
-                      was that I could layer them such that it would give the painting more depth. In order to do this I simply cut 4 sheets of acrylic to the appropriate size
-                      and cut holes in the corners so that rods could go through them. All of this was done with the laser cutter at my school. Following this, I cut 4 steel rods
-                      to the size I wanted (about 4 inches) so that I could line all the panels up and connect them to one another. The last thing I should mention is that I made
-                      circular "spacers" out of acrylic to place between panels such that the panels could not wiggle back and forth on the rod.</p>
-                    <p class="text-black">I painted one layer per panel and then layed all the panels and spacers from the bottom (back) up. I used a small amount of acrylic glue to bond the spacers
-                      and panels so that the entire frame was firm. The rods were slotted through the panels and the spacers and ensured that everything was lined up</p>
-                      <p class="text-black">All in all, I am quite happy with the end result. The colors are bright and pop out really well in lit environments.
-                      Furthermore, I think my desired effect of depth was achieved and that the stencil turned out great! As a last remark, I think it's worth noting that
-                      I experienced minor inaccurices with all the slop from the laser cutter but I was able to get around it by widening the holes in the spacers. </p>
-                    <img class="img-responsive" src="img/portfolio/greatwave.jpg" alt="" align="middle">
+                    <p class="text-black">For this project, a roomba-like robot equipped with a laser range finder was used to collect data of the room. For every data point, the robot recorded an angle, a coordinate, and a distance to a measured object. This information was gathered with ROS and exported to a .txt file with all of the data. The occupancy grid was created using a bayes filter and a standard occupancy grid algorithm:</p>
+
+                    <img class="img-responsive" src="img/portfolio/algo1.png" alt="" align="middle">
+                    <img class="img-responsive" src="img/portfolio/algo2.png" alt="" align="middle">
+
+                    <p class="text-black">In the occupancy map, every cell (pixel) is binary: it is either empty or occupied. The probability that the cell is occupied is found using a log-odds representation. My code outputs a represenatation of the map half-way through the data, a representation before log-odd conversions, and a final occupancy grid.</p>
+
+                    <img class="img-responsive" src="img/portfolio/occupancy_map.png" alt="" align="middle">
+
+                    The actual picture of the environment is seen below
+
+                    <img class="img-responsive" src="img/portfolio/occupancypic.jpg" alt="" align="middle">
+
+                    <p class="text-black">The full source code, including sample data on which to run the matlab script, can be found on my github <a target="_blank" href=" https://github.com/jeanturban/occupancy-grid">page</a>.</p>  
+
                     <!-- Small time stamp -->
                     <br>
                     <ul class="list-inline text-black">
-                        <li>Date: August 2014</li>
+                        <li>Date: March 2015</li>
                     </ul>
                 </div>
             </div>
